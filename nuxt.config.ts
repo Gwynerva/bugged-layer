@@ -13,5 +13,10 @@ export default defineNuxtConfig({
   },
   modules: [
     layerDir + '/module',
-  ]
+  ],
+  vite: {
+    optimizeDeps: {
+      noDiscovery: true,
+    }
+  }
 })
